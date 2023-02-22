@@ -1,73 +1,65 @@
 package Funcionario;
 
 public class Funcionario {
+    private String nome;
+    private String cargo;
+    private double salario;
+    private int idade;
+    private String departamento;
 
-	// Declarando os Atributos da Classe
-	private String nome;
-	private String cargo;
-	private String genero;
-	private int idade;
-	private String endereco;
-	
-	public Funcionario(String nome, String cargo, String genero, int idade, String endereço) {
-		this.nome = nome;
-		this.cargo = cargo;
-		this.genero = genero;
-		this.idade = idade;
-		this.endereco = endereço;
-	}
+    public Funcionario(String nome, String cargo, double salario, int idade, String departamento) {
+        this.nome = nome;
+        this.cargo = cargo;
+        this.salario = salario;
+        this.idade = idade;
+        this.departamento = departamento;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public String getCargo() {
-		return cargo;
-	}
+    public String getCargo() {
+        return cargo;
+    }
 
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
 
-	public String getGenero() {
-		return genero;
-	}
+    public double getSalario() {
+        return salario;
+    }
 
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
 
-	public int getIdade() {
-		return idade;
-	}
+    public int getIdade() {
+        return idade;
+    }
 
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
 
-	public String getEndereço() {
-		return endereco;
-	}
+    public String getDepartamento() {
+        return departamento;
+    }
 
-	public void setEndereço(String endereço) {
-		this.endereco = endereço;
-	}
-	
-	// Método para visualizar os dados do Funcionario
-		public void visualizar() {
-			System.out.println("\nNome: " + nome);
-			System.out.println("\nCargo: " + cargo);
-			System.out.println("\nGenero: " + genero);
-			System.out.println("\nIdade: " + idade);
-			System.out.println("\nEndereço: " + endereco);
-		}
-	
-	
-	
-	
-	
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public void visualizar() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Cargo: " + cargo);
+        System.out.println("Salário: " + salario);
+        System.out.println("Idade: " + idade);
+        System.out.println("Departamento: " + departamento);
+    }
 }

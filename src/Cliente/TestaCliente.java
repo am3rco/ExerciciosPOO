@@ -15,8 +15,6 @@ public class TestaCliente {
         System.out.println();
         cliente2.visualizar();
 		
-		
-		
 	}
 	
 }
